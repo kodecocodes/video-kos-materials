@@ -60,7 +60,7 @@ object ApiModule {
     fun retrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("https://www.boredapi.com/api/")
+            .baseUrl("http://www.boredapi.com/api/")
             .build()
     }
 
