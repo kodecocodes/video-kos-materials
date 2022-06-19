@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Bored No More!</string>
+  <string name="explore_activity_item_label">Activity</string>
+  <string name="generic_error">An error occurred</string>
+  <string name="details_fragment_header">Details</string>
+  <string name="activity_details_participants_header">Participants</string>
+</resources>

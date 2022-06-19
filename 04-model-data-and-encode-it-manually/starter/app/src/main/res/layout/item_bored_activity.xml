@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/boredItemRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground">
+
+  <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/chevron"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/outline_chevron_right_24"
+      android:padding="8dp"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/activityName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:textAppearance="?attr/textAppearanceBody1"
+      app:layout_constraintEnd_toStartOf="@id/chevron"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/activityLabel"
+      tools:text="@tools:sample/lorem/random" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/activityLabel"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/explore_activity_item_label"
+      android:textAppearance="?attr/textAppearanceOverline"
+      app:layout_constraintEnd_toStartOf="@id/chevron"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
